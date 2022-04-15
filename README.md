@@ -6,7 +6,7 @@ WandB(Weights & Biases)란 더 나은 모델을 빨리 만들 수 있도록 도�
 1) [wandb사이트](https://wandb.ai/home)에서 회원 가입 한다.
 2) [Setting](https://wandb.ai/settings) 에 들어가서, **API Keys** 를 복사해 둔다.
 
-### ![image](https://user-images.githubusercontent.com/93692701/163511370-56346b43-c4ec-40df-928c-3b33064aea67.png)
+![image](https://user-images.githubusercontent.com/93692701/163515921-f3ef9abd-a156-40ce-b9a5-52f8a409634f.png)
 
 3) wand 패키지를 설치한다.
 ```
