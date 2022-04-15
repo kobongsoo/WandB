@@ -1,4 +1,6 @@
 # WandB
+<img src="https://img.shields.io/badge/Pytorch-EE4C2C?style=flat-square&logo=Pytorch&logoColor=white"/><img src="https://img.shields.io/badge/Python-3766AB?style=flat-square&logo=Python&logoColor=white"/></a>
+
 ## WandB 테스트 예제
 WandB(Weights & Biases)란 더 나은 모델을 빨리 만들 수 있도록, 
 loss, Accuracy, HyperPrameter등 을 손쉽게 테스트 하고 시각적으로 확인 할 수 있는, 머신러닝 Experiment tracking tool이다.
