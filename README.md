@@ -1,6 +1,7 @@
 # WandB
 ## WandB 테스트 예제
-WandB(Weights & Biases)란 더 나은 모델을 빨리 만들 수 있도록 도와주는 머신러닝 Experiment tracking tool입니다.
+WandB(Weights & Biases)란 더 나은 모델을 빨리 만들 수 있도록, 
+loss, Accuracy, HyperPrameter등 을 손쉽게 테스트 하고 시각적으로 확인 할 수 있는, 머신러닝 Experiment tracking tool이다.
 
 ### 1. WandB 사전준비
 1) [wandb사이트](https://wandb.ai/home)에서 회원 가입 한다.
@@ -43,6 +44,7 @@ config = wandb.config
              })
  ```
 4) WandB 종료
+- 훈련이 다 끝나면 WandB 종료
 ```
 wnadb.finish()
 ```
@@ -115,6 +117,6 @@ wandb.agent(sweep_id, train, count=3)
 - 해당 Projects 선택
 ![image](https://user-images.githubusercontent.com/93692701/163515515-b7db7ef4-8bc7-4a58-aeae-5ba22bcc623d.png)
 
-- **Parallel coordinates 그래프를 추가하면 lr, batch_size, epochs등의 관계를 확인할 수 있다.**
-  (**[+Add Panel]** 버튼 클릭하여 **Parallel cooridinates** 선택해서 추가하면됨)
+- **HyperParameter Sweeps 인 경우에는 Parallel coordinates 그래프를 추가하면 lr, batch_size, epochs등의 관계를 확인할 수 있다.**
+- **[+Add Panel]** 버튼 클릭하여 **Parallel cooridinates** 선택해서 추가하면됨
 ![image](https://user-images.githubusercontent.com/93692701/163515617-5dc85c67-6032-449c-aa8a-11e33e2a0696.png)
