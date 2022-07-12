@@ -129,7 +129,7 @@ wandb.agent(sweep_id, train, count=3)
 
 ```
 import os
-os.environ[“WANDB_DISABLED”] = “true”
+os.environ["WANDB_DISABLED"] = "true"
 ```
 ```
 # None disables all integrations
