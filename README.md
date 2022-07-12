@@ -122,3 +122,18 @@ wandb.agent(sweep_id, train, count=3)
 - **HyperParameter Sweeps 인 경우에는 Parallel coordinates 그래프를 추가하면 lr, batch_size, epochs등의 관계를 확인할 수 있다.**
 - **[+Add Panel]** 버튼 클릭하여 **Parallel cooridinates** 선택해서 추가하면됨
 ![image](https://user-images.githubusercontent.com/93692701/163515617-5dc85c67-6032-449c-aa8a-11e33e2a0696.png)
+
+### Huggingface Trainer
+- Huggingface Tranier 로 훈련하는 경우 기본이 WandB 사용으로 설정되어 있다.
+- 따라서 Tranier 훈련하는 경우 WandB를 Disable 하는 방법은 다음과 같다(2중 하나만 적용하면됨)
+
+```
+import os
+os.environ[“WANDB_DISABLED”] = “true”
+```
+```
+# None disables all integrations
+args = TrainingArguments(report_to=None, ...)
+```
+
+
